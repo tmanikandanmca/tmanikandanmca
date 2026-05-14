@@ -19,7 +19,7 @@
 
 ## 🚀 About Me
 
-I'm **Manikandan Thi**, a passionate software professional focused on building reliable, scalable, and user-friendly solutions. I enjoy solving real-world problems through technology, continuously learning and improving my craft.
+I'm **Manikandan Thi**, a passionate software professional focused on building reliable, scalable, and user-friendly solutions. I enjoy solving real-world problems through technology, continuously learning, and contributing to impactful projects.
 
 - 💼 Open to collaborating on meaningful software projects
 - 🌱 Always learning and exploring modern development practices
@@ -55,12 +55,7 @@ I'm **Manikandan Thi**, a passionate software professional focused on building r
 
 ## 📈 GitHub Snapshot
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=tmanikandanmca&show_icons=true&theme=tokyonight"
-    alt="GitHub stats"
-  />
-</p>
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=tmanikandanmca&show_icons=true&theme=tokyonight)
 
 <p align="center">
   <img
