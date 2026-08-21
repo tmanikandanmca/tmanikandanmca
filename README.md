@@ -120,7 +120,7 @@
 <!-- GitHub Streak Stats -->
 <p>
 <a href="https://github.com/tmanikandanmca">
-<img src="https://streak-stats.demolab.com?user=tmanikandanmca&theme=dark&background=0A0514&border=EC4899&stroke=EC4899&ring=EC4899&fire=EC4899&currStreakNum=EC4899&sideNums=A855F7&sideLabels=CBD5E1&dates=A78BFA&border_radius=16" alt="GitHub Streak Stats" width="100%" style="max-width: 800px;">
+<img src="assets/streak.svg?v=1" alt="GitHub Streak Stats" width="100%" style="max-width: 800px;">
 </a>
 </p>
 
@@ -138,7 +138,7 @@
 <!-- Contribution Activity Graph -->
 <p>
 <a href="https://github.com/tmanikandanmca">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=tmanikandanmca&bg_color=0A0514&color=EC4899&line=A855F7&point=38BDF8&area=true&area_color=EC4899&hide_border=false&border_color=EC4899&radius=16" alt="Manikandan's Contribution Graph" width="100%" style="max-width: 800px;">
+<img src="assets/activity.svg?v=1" alt="Manikandan's Contribution Graph" width="100%" style="max-width: 800px;">
 </a>
 </p>
 
