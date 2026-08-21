@@ -1,98 +1,93 @@
-<svg fill="none" viewBox="0 0 800 140" width="800" height="140" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 800 144" width="800" height="144" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="trophyBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#090d16" />
-      <stop offset="50%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#0a0e1a" />
+    <linearGradient id="trophyCardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0514" />
+      <stop offset="50%" stop-color="#150a24" />
+      <stop offset="100%" stop-color="#0c0618" />
     </linearGradient>
 
-    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#fbbf24" />
-      <stop offset="100%" stop-color="#d97706" />
+    <linearGradient id="trophyShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0)" />
+      <stop offset="50%" stop-color="rgba(236, 72, 153, 0.35)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0)" />
     </linearGradient>
 
-    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#0284c7" />
-    </linearGradient>
-
-    <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#c084fc" />
-      <stop offset="100%" stop-color="#7c3aed" />
-    </linearGradient>
-
-    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#34d399" />
-      <stop offset="100%" stop-color="#059669" />
-    </linearGradient>
-
-    <filter id="glowTrophy" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
+    <filter id="trophyGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
   <style>
-    @keyframes floatTrophy {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-3px); }
+    @keyframes trophyPop {
+      0% { transform: scale(0.85); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
     }
-    .trophy-item {
-      transition: all 0.3s ease;
+    @keyframes trophyShinePass {
+      0%, 20% { transform: translateX(-200px) skewX(-20deg); }
+      60%, 100% { transform: translateX(900px) skewX(-20deg); }
     }
-    .trophy-item:hover {
-      filter: url(#glowTrophy);
+    .trophy-badge {
+      animation: trophyPop 0.8s ease-out forwards;
+    }
+    .trophy-shine-sweep {
+      animation: trophyShinePass 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     }
   </style>
 
-  <!-- Background Card -->
-  <rect x="1.5" y="1.5" width="797" height="137" rx="14" fill="url(#trophyBg)" stroke="#1e293b" stroke-width="1.5" />
+  <!-- Card Background -->
+  <rect x="1.5" y="1.5" width="797" height="141" rx="16" fill="url(#trophyCardBg)" stroke="rgba(236, 72, 153, 0.3)" stroke-width="1.5" />
 
-  <!-- Trophy 1: Gold Master -->
-  <g transform="translate(45, 20)" class="trophy-item">
-    <circle cx="45" cy="40" r="32" fill="rgba(251, 191, 36, 0.1)" stroke="url(#goldGrad)" stroke-width="1.5" />
-    <text x="45" y="47" font-size="26" text-anchor="middle">🏆</text>
-    <text x="45" y="88" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">Master Architect</text>
-    <text x="45" y="102" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">GOLD TIER</text>
+  <!-- Trophy 1 -->
+  <g transform="translate(45, 22)" class="trophy-badge">
+    <circle cx="45" cy="40" r="32" fill="rgba(251, 191, 36, 0.12)" stroke="#fbbf24" stroke-width="1.5" filter="url(#trophyGlow)" />
+    <text x="45" y="48" font-size="26" text-anchor="middle">🏆</text>
+    <text x="45" y="88" fill="#fdf4ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">Master Architect</text>
+    <text x="45" y="103" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">GOLD TIER</text>
   </g>
 
-  <!-- Trophy 2: C# & .NET Champion -->
-  <g transform="translate(175, 20)" class="trophy-item">
-    <circle cx="45" cy="40" r="32" fill="rgba(129, 140, 248, 0.1)" stroke="url(#purpleGrad)" stroke-width="1.5" />
-    <text x="45" y="47" font-size="26" text-anchor="middle">⚡</text>
-    <text x="45" y="88" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">.NET Core Titan</text>
-    <text x="45" y="102" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">SPECIALIST</text>
+  <!-- Trophy 2 -->
+  <g transform="translate(175, 22)" class="trophy-badge">
+    <circle cx="45" cy="40" r="32" fill="rgba(236, 72, 153, 0.12)" stroke="#ec4899" stroke-width="1.5" filter="url(#trophyGlow)" />
+    <text x="45" y="48" font-size="26" text-anchor="middle">⚡</text>
+    <text x="45" y="88" fill="#fdf4ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">.NET Core Titan</text>
+    <text x="45" y="103" fill="#ec4899" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">SPECIALIST</text>
   </g>
 
-  <!-- Trophy 3: Clean Architecture -->
-  <g transform="translate(305, 20)" class="trophy-item">
-    <circle cx="45" cy="40" r="32" fill="rgba(56, 189, 248, 0.1)" stroke="url(#cyanGrad)" stroke-width="1.5" />
-    <text x="45" y="47" font-size="26" text-anchor="middle">🛡️</text>
-    <text x="45" y="88" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">Clean Patterns</text>
-    <text x="45" y="102" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">LAB LEADER</text>
+  <!-- Trophy 3 -->
+  <g transform="translate(305, 22)" class="trophy-badge">
+    <circle cx="45" cy="40" r="32" fill="rgba(168, 85, 247, 0.12)" stroke="#a855f7" stroke-width="1.5" filter="url(#trophyGlow)" />
+    <text x="45" y="48" font-size="26" text-anchor="middle">🛡️</text>
+    <text x="45" y="88" fill="#fdf4ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">Clean Patterns</text>
+    <text x="45" y="103" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">LAB LEADER</text>
   </g>
 
-  <!-- Trophy 4: Angular Frontend Pro -->
-  <g transform="translate(435, 20)" class="trophy-item">
-    <circle cx="45" cy="40" r="32" fill="rgba(244, 63, 94, 0.1)" stroke="#f43f5e" stroke-width="1.5" />
-    <text x="45" y="47" font-size="26" text-anchor="middle">🎯</text>
-    <text x="45" y="88" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">Angular Ninja</text>
-    <text x="45" y="102" fill="#f43f5e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">FULL-STACK</text>
+  <!-- Trophy 4 -->
+  <g transform="translate(435, 22)" class="trophy-badge">
+    <circle cx="45" cy="40" r="32" fill="rgba(244, 63, 94, 0.12)" stroke="#f43f5e" stroke-width="1.5" filter="url(#trophyGlow)" />
+    <text x="45" y="48" font-size="26" text-anchor="middle">🎯</text>
+    <text x="45" y="88" fill="#fdf4ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">Angular Ninja</text>
+    <text x="45" y="103" fill="#f43f5e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">FULL-STACK</text>
   </g>
 
-  <!-- Trophy 5: Microservices & Cloud -->
-  <g transform="translate(565, 20)" class="trophy-item">
-    <circle cx="45" cy="40" r="32" fill="rgba(52, 211, 153, 0.1)" stroke="url(#emeraldGrad)" stroke-width="1.5" />
-    <text x="45" y="47" font-size="26" text-anchor="middle">🚀</text>
-    <text x="45" y="88" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">Distributed Systems</text>
-    <text x="45" y="102" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">MICROSERVICES</text>
+  <!-- Trophy 5 -->
+  <g transform="translate(565, 22)" class="trophy-badge">
+    <circle cx="45" cy="40" r="32" fill="rgba(56, 189, 248, 0.12)" stroke="#38bdf8" stroke-width="1.5" filter="url(#trophyGlow)" />
+    <text x="45" y="48" font-size="26" text-anchor="middle">🚀</text>
+    <text x="45" y="88" fill="#fdf4ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">Distributed Systems</text>
+    <text x="45" y="103" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">MICROSERVICES</text>
   </g>
 
-  <!-- Trophy 6: Open Source Contributor -->
-  <g transform="translate(695, 20)" class="trophy-item">
-    <circle cx="45" cy="40" r="32" fill="rgba(251, 191, 36, 0.1)" stroke="url(#goldGrad)" stroke-width="1.5" />
-    <text x="45" y="47" font-size="26" text-anchor="middle">🌟</text>
-    <text x="45" y="88" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle">OSS Pioneer</text>
-    <text x="45" y="102" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">CONTRIBUTOR</text>
+  <!-- Trophy 6 -->
+  <g transform="translate(695, 22)" class="trophy-badge">
+    <circle cx="45" cy="40" r="32" fill="rgba(52, 211, 153, 0.12)" stroke="#34d399" stroke-width="1.5" filter="url(#trophyGlow)" />
+    <text x="45" y="48" font-size="26" text-anchor="middle">🌟</text>
+    <text x="45" y="88" fill="#fdf4ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">OSS Pioneer</text>
+    <text x="45" y="103" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">CONTRIBUTOR</text>
+  </g>
+
+  <!-- Shine Sweep -->
+  <g class="trophy-shine-sweep">
+    <rect x="0" y="0" width="120" height="144" fill="url(#trophyShine)" />
   </g>
 </svg>

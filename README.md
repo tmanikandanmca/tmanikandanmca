@@ -1,10 +1,10 @@
 <div align="center">
 
-<!-- ==================== 1. ANIMATED HERO BANNER (LIGHT/DARK) ==================== -->
+<!-- ==================== 1. ANIMATED HERO BANNER (DARK/LIGHT) ==================== -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img src="assets/banner.svg" alt="Manikandan Thiyagarajan - Senior Full-Stack .NET Engineer Banner" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg?v=1">
+  <img src="assets/banner.svg?v=1" alt="Manikandan Thiyagarajan - Senior Full-Stack .NET Engineer Banner" width="100%">
 </picture>
 
 <br><br>
@@ -14,7 +14,7 @@
 <tr>
 <td width="38%" align="center" valign="top">
 <a href="https://github.com/tmanikandanmca">
-<img src="assets/lanyard.svg" alt="Manikandan Thiyagarajan - Interactive Swinging ID Card" width="100%" style="max-width: 320px;">
+<img src="assets/lanyard.svg?v=1" alt="Manikandan Thiyagarajan - Interactive Swinging ID Card" width="100%" style="max-width: 320px;">
 </a>
 </td>
 <td width="62%" align="left" valign="top">
@@ -68,7 +68,7 @@
 </table>
 <br>
 <blockquote>
-💬 <i>"Architecting high-throughput .NET microservices, crafting robust REST APIs, and designing responsive Angular web experiences with clean code principles."</i>
+💬 <i>"Code. Coffee. Repeat. — Architecting high-throughput .NET microservices, crafting robust REST APIs, and designing responsive Angular web experiences with clean code principles."</i>
 </blockquote>
 </td>
 </tr>
@@ -98,18 +98,18 @@
 <h3>📊 GitHub Analytics &amp; Activity Overview</h3>
 <br>
 
-<!-- GitHub Stats & Top Languages Side by Side (Custom Vector SVGs - Zero Latency) -->
+<!-- GitHub Stats & Top Languages Side by Side (Custom Local SVGs - Zero Latency) -->
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td align="center" valign="top">
 <a href="https://github.com/tmanikandanmca">
-<img src="assets/stats.svg" alt="Manikandan's GitHub Stats" width="390">
+<img src="assets/stats.svg?v=1" alt="Manikandan's GitHub Stats" width="390">
 </a>
 </td>
 <td width="20"></td>
 <td align="center" valign="top">
 <a href="https://github.com/tmanikandanmca">
-<img src="assets/langs.svg" alt="Top Languages Used" width="390">
+<img src="assets/langs.svg?v=1" alt="Top Languages Used" width="390">
 </a>
 </td>
 </tr>
@@ -120,7 +120,7 @@
 <!-- GitHub Streak Stats -->
 <p>
 <a href="https://github.com/tmanikandanmca">
-<img src="https://streak-stats.demolab.com?user=tmanikandanmca&theme=dark&background=0B0F19&border=1E293B&stroke=38BDF8&ring=38BDF8&fire=38BDF8&currStreakNum=38BDF8&sideNums=818CF8&sideLabels=94A3B8&dates=64748B&border_radius=12" alt="GitHub Streak Stats" width="100%" style="max-width: 800px;">
+<img src="https://streak-stats.demolab.com?user=tmanikandanmca&theme=dark&background=0A0514&border=EC4899&stroke=EC4899&ring=EC4899&fire=EC4899&currStreakNum=EC4899&sideNums=A855F7&sideLabels=CBD5E1&dates=A78BFA&border_radius=16" alt="GitHub Streak Stats" width="100%" style="max-width: 800px;">
 </a>
 </p>
 
@@ -129,7 +129,7 @@
 <!-- GitHub Achievements & Trophies Wall -->
 <p>
 <a href="https://github.com/tmanikandanmca">
-<img src="assets/trophies.svg" alt="GitHub Achievements & Trophies" width="100%" style="max-width: 800px;">
+<img src="assets/trophies.svg?v=1" alt="GitHub Achievements &amp; Trophies" width="100%" style="max-width: 800px;">
 </a>
 </p>
 
@@ -138,7 +138,7 @@
 <!-- Contribution Activity Graph -->
 <p>
 <a href="https://github.com/tmanikandanmca">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=tmanikandanmca&bg_color=0B0F19&color=38BDF8&line=818CF8&point=34D399&area=true&area_color=38BDF8&hide_border=false&border_color=1E293B&radius=12" alt="Manikandan's Contribution Graph" width="100%" style="max-width: 800px;">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=tmanikandanmca&bg_color=0A0514&color=EC4899&line=A855F7&point=38BDF8&area=true&area_color=EC4899&hide_border=false&border_color=EC4899&radius=16" alt="Manikandan's Contribution Graph" width="100%" style="max-width: 800px;">
 </a>
 </p>
 
@@ -178,7 +178,7 @@
 
 <!-- ==================== 6. FOOTER & PROFILE VIEWS ==================== -->
 <p>
-<img src="https://komarev.com/ghpvc/?username=tmanikandanmca&color=38bdf8&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile View Counter">
+<img src="https://komarev.com/ghpvc/?username=tmanikandanmca&color=ec4899&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile View Counter">
 </p>
 
 <p>
