@@ -1,187 +1,188 @@
 <div align="center">
 
-  <!-- ==================== 1. ANIMATED HERO BANNER (LIGHT/DARK) ==================== -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-    <img src="assets/banner.svg" alt="Manikandan Thiyagarajan - Senior Full-Stack .NET Engineer Banner" width="100%">
-  </picture>
+<!-- ==================== 1. ANIMATED HERO BANNER (LIGHT/DARK) ==================== -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img src="assets/banner.svg" alt="Manikandan Thiyagarajan - Senior Full-Stack .NET Engineer Banner" width="100%">
+</picture>
 
-  <br><br>
+<br><br>
 
-  <!-- ==================== 2. TWO-COLUMN SHOWCASE TABLE ==================== -->
-  <table border="0" width="100%" cellspacing="0" cellpadding="0">
-    <tr>
-      <!-- LEFT COLUMN: Swinging Lanyard ID Badge (38% width) -->
-      <td width="38%" align="center" valign="top">
-        <a href="https://github.com/tmanikandanmca">
-          <img src="assets/lanyard.svg" alt="Manikandan Thiyagarajan - Interactive Swinging ID Card" width="100%" style="max-width: 320px;">
-        </a>
-      </td>
+<!-- ==================== 2. TWO-COLUMN SHOWCASE TABLE ==================== -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td width="38%" align="center" valign="top">
+<a href="https://github.com/tmanikandanmca">
+<img src="assets/lanyard.svg" alt="Manikandan Thiyagarajan - Interactive Swinging ID Card" width="100%" style="max-width: 320px;">
+</a>
+</td>
+<td width="62%" align="left" valign="top">
+<h3>⚡ Featured Engineering &amp; Architecture Projects</h3>
+<br>
+<table width="100%">
+<thead>
+<tr>
+<th align="left">🚀 Repository</th>
+<th align="left">🛠️ Tech Stack</th>
+<th align="center">⭐ Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/tmanikandanmca/AspNetQueryVerb"><b>AspNetQueryVerb</b></a></td>
+<td><code>.NET 10</code> <code>C#</code> <code>HTTP QUERY</code></td>
+<td align="center">🌟 <i>Active Research</i></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tmanikandanmca/DOTNETPATTERNSLAB"><b>DOTNETPATTERNSLAB</b></a></td>
+<td><code>.NET Core</code> <code>Design Patterns</code> <code>Clean Arch</code></td>
+<td align="center">⭐ 1 Star</td>
+</tr>
+<tr>
+<td><a href="https://github.com/tmanikandanmca/team-cash-hub"><b>team-cash-hub</b></a></td>
+<td><code>Angular</code> <code>TypeScript</code> <code>ASP.NET Core</code></td>
+<td align="center">🌟 <i>Production App</i></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tmanikandanmca/RateLimitingSuite"><b>RateLimitingSuite</b></a></td>
+<td><code>C#</code> <code>ASP.NET Core</code> <code>Middleware</code></td>
+<td align="center">🌟 <i>Resilience</i></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tmanikandanmca/Angular-StateManagement"><b>Angular-StateManagement</b></a></td>
+<td><code>Angular</code> <code>RxJS</code> <code>NgRx Architecture</code></td>
+<td align="center">⭐ 1 Star</td>
+</tr>
+<tr>
+<td><a href="https://github.com/tmanikandanmca/Eshop-Microservices"><b>Eshop-Microservices</b></a></td>
+<td><code>Microservices</code> <code>Docker</code> <code>Event-Driven</code></td>
+<td align="center">🌟 <i>Distributed</i></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tmanikandanmca/SecureServiceWithID"><b>SecureServiceWithID</b></a></td>
+<td><code>JWT</code> <code>IdentityServer</code> <code>OAuth2 / AuthZ</code></td>
+<td align="center">🌟 <i>Security</i></td>
+</tr>
+</tbody>
+</table>
+<br>
+<blockquote>
+💬 <i>"Architecting high-throughput .NET microservices, crafting robust REST APIs, and designing responsive Angular web experiences with clean code principles."</i>
+</blockquote>
+</td>
+</tr>
+</table>
 
-      <!-- RIGHT COLUMN: Featured Repositories & Tagline (62% width) -->
-      <td width="62%" align="left" valign="top">
-        <h3>⚡ Featured Engineering &amp; Architecture Projects</h3>
-        <br>
-        <table width="100%">
-          <thead>
-            <tr>
-              <th align="left">🚀 Repository</th>
-              <th align="left">🛠️ Tech Stack</th>
-              <th align="center">⭐ Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="https://github.com/tmanikandanmca/AspNetQueryVerb"><b>AspNetQueryVerb</b></a></td>
-              <td><code>.NET 10</code> <code>C#</code> <code>HTTP QUERY</code></td>
-              <td align="center">🌟 <i>Active Research</i></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/tmanikandanmca/DOTNETPATTERNSLAB"><b>DOTNETPATTERNSLAB</b></a></td>
-              <td><code>.NET Core</code> <code>Design Patterns</code> <code>Clean Arch</code></td>
-              <td align="center">⭐ 1 Star</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/tmanikandanmca/team-cash-hub"><b>team-cash-hub</b></a></td>
-              <td><code>Angular</code> <code>TypeScript</code> <code>ASP.NET Core</code></td>
-              <td align="center">🌟 <i>Production App</i></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/tmanikandanmca/RateLimitingSuite"><b>RateLimitingSuite</b></a></td>
-              <td><code>C#</code> <code>ASP.NET Core</code> <code>Middleware</code></td>
-              <td align="center">🌟 <i>Resilience</i></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/tmanikandanmca/Angular-StateManagement"><b>Angular-StateManagement</b></a></td>
-              <td><code>Angular</code> <code>RxJS</code> <code>NgRx Architecture</code></td>
-              <td align="center">⭐ 1 Star</td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/tmanikandanmca/Eshop-Microservices"><b>Eshop-Microservices</b></a></td>
-              <td><code>Microservices</code> <code>Docker</code> <code>Event-Driven</code></td>
-              <td align="center">🌟 <i>Distributed</i></td>
-            </tr>
-            <tr>
-              <td><a href="https://github.com/tmanikandanmca/SecureServiceWithID"><b>SecureServiceWithID</b></a></td>
-              <td><code>JWT</code> <code>IdentityServer</code> <code>OAuth2 / AuthZ</code></td>
-              <td align="center">🌟 <i>Security</i></td>
-            </tr>
-          </tbody>
-        </table>
-        <br>
-        <blockquote>
-          💬 <i>"Architecting high-throughput .NET microservices, crafting robust REST APIs, and designing responsive Angular web experiences with clean code principles."</i>
-        </blockquote>
-      </td>
-    </tr>
-  </table>
+<br>
 
-  <br>
+<!-- ==================== 3. SKILLS & ARSENAL ==================== -->
+<h3>🛠️ Core Tech Stack &amp; Architectural Toolkit</h3>
+<p>
+<a href="https://learn.microsoft.com/en-us/dotnet/"><img src="https://img.shields.io/badge/.NET_10_%2F_9_%2F_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET"></a>
+<a href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#"></a>
+<a href="https://dotnet.microsoft.com/apps/aspnet"><img src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="ASP.NET Core"></a>
+<a href="https://angular.dev/"><img src="https://img.shields.io/badge/Angular_18-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"></a>
+<a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
+<br>
+<a href="https://www.microsoft.com/sql-server"><img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="SQL Server"></a>
+<a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"></a>
+<a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"></a>
+<a href="https://git-scm.com/"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"></a>
+<a href="https://github.com/features/actions"><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"></a>
+</p>
 
-  <!-- ==================== 3. SKILLS & ARSENAL ==================== -->
-  <h3>🛠️ Core Tech Stack &amp; Architectural Toolkit</h3>
-  <p>
-    <!-- Backend -->
-    <a href="https://learn.microsoft.com/en-us/dotnet/"><img src="https://img.shields.io/badge/.NET_10_%2F_9_%2F_8-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET"></a>
-    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#"></a>
-    <a href="https://dotnet.microsoft.com/apps/aspnet"><img src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="ASP.NET Core"></a>
-    <a href="https://angular.dev/"><img src="https://img.shields.io/badge/Angular_18-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular"></a>
-    <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
-    <br>
-    <!-- Databases & DevOps -->
-    <a href="https://www.microsoft.com/sql-server"><img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" alt="SQL Server"></a>
-    <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"></a>
-    <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"></a>
-    <a href="https://git-scm.com/"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"></a>
-    <a href="https://github.com/features/actions"><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions"></a>
-  </p>
+<br>
 
-  <br>
+<!-- ==================== 4. GITHUB ANALYTICS & STATS SUITE ==================== -->
+<h3>📊 GitHub Analytics &amp; Activity Overview</h3>
+<br>
 
-  <!-- ==================== 4. GITHUB ANALYTICS & STATS SUITE ==================== -->
-  <h3>📊 GitHub Analytics &amp; Activity Overview</h3>
-  <br>
+<!-- GitHub Stats & Top Languages Side by Side (Custom Vector SVGs - Zero Latency) -->
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" valign="top">
+<a href="https://github.com/tmanikandanmca">
+<img src="assets/stats.svg" alt="Manikandan's GitHub Stats" width="390">
+</a>
+</td>
+<td width="20"></td>
+<td align="center" valign="top">
+<a href="https://github.com/tmanikandanmca">
+<img src="assets/langs.svg" alt="Top Languages Used" width="390">
+</a>
+</td>
+</tr>
+</table>
 
-  <!-- GitHub Stats & Top Languages Side by Side -->
-  <p>
-    <a href="https://github.com/tmanikandanmca">
-      <img src="https://github-readme-stats.vercel.app/api?username=tmanikandanmca&show_icons=true&title_color=38bdf8&text_color=94a3b8&icon_color=818cf8&bg_color=0b0f19&border_color=1e293b&border_radius=12&locale=en" alt="Manikandan's GitHub Stats" height="175">
-    </a>
-    &nbsp;
-    <a href="https://github.com/tmanikandanmca">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tmanikandanmca&layout=compact&title_color=38bdf8&text_color=94a3b8&bg_color=0b0f19&border_color=1e293b&border_radius=12&langs_count=6" alt="Top Languages Used" height="175">
-    </a>
-  </p>
+<br>
 
-  <br>
+<!-- GitHub Streak Stats -->
+<p>
+<a href="https://github.com/tmanikandanmca">
+<img src="https://streak-stats.demolab.com?user=tmanikandanmca&theme=dark&background=0B0F19&border=1E293B&stroke=38BDF8&ring=38BDF8&fire=38BDF8&currStreakNum=38BDF8&sideNums=818CF8&sideLabels=94A3B8&dates=64748B&border_radius=12" alt="GitHub Streak Stats" width="100%" style="max-width: 800px;">
+</a>
+</p>
 
-  <!-- GitHub Streak Stats -->
-  <p>
-    <a href="https://github.com/tmanikandanmca">
-      <img src="https://streak-stats.demolab.com?user=tmanikandanmca&theme=dark&background=0B0F19&border=1E293B&stroke=38BDF8&ring=38BDF8&fire=38BDF8&currStreakNum=38BDF8&sideNums=818CF8&sideLabels=94A3B8&dates=64748B&border_radius=12" alt="GitHub Streak Stats" width="100%" style="max-width: 800px;">
-    </a>
-  </p>
+<br>
 
-  <br>
+<!-- GitHub Achievements & Trophies Wall -->
+<p>
+<a href="https://github.com/tmanikandanmca">
+<img src="assets/trophies.svg" alt="GitHub Achievements & Trophies" width="100%" style="max-width: 800px;">
+</a>
+</p>
 
-  <!-- Contribution Activity Graph -->
-  <p>
-    <a href="https://github.com/tmanikandanmca">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=tmanikandanmca&bg_color=0B0F19&color=38BDF8&line=818CF8&point=34D399&area=true&area_color=38BDF8&hide_border=false&border_color=1E293B&radius=12" alt="Manikandan's Contribution Graph" width="100%" style="max-width: 800px;">
-    </a>
-  </p>
+<br>
 
-  <br>
+<!-- Contribution Activity Graph -->
+<p>
+<a href="https://github.com/tmanikandanmca">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=tmanikandanmca&bg_color=0B0F19&color=38BDF8&line=818CF8&point=34D399&area=true&area_color=38BDF8&hide_border=false&border_color=1E293B&radius=12" alt="Manikandan's Contribution Graph" width="100%" style="max-width: 800px;">
+</a>
+</p>
 
-  <!-- GitHub Profile Trophies -->
-  <p>
-    <a href="https://github.com/tmanikandanmca">
-      <img src="https://github-profile-trophy.vercel.app/?username=tmanikandanmca&theme=darkhub&no-bg=false&no-frame=false&margin-w=12&margin-h=12&row=1&column=7" alt="GitHub Trophies" width="100%" style="max-width: 800px;">
-    </a>
-  </p>
+<br>
 
-  <br>
+<!-- Contribution Snake Animation -->
+<h3>🐍 Contribution Matrix Snake</h3>
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tmanikandanmca/tmanikandanmca/output/github-contribution-grid-snake-dark.svg">
+<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tmanikandanmca/tmanikandanmca/output/github-contribution-grid-snake.svg">
+<img src="https://raw.githubusercontent.com/tmanikandanmca/tmanikandanmca/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake Matrix" width="100%" style="max-width: 800px;">
+</picture>
 
-  <!-- Contribution Snake Animation -->
-  <h3>🐍 Contribution Matrix Snake</h3>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tmanikandanmca/tmanikandanmca/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tmanikandanmca/tmanikandanmca/output/github-contribution-grid-snake.svg">
-    <img src="https://raw.githubusercontent.com/tmanikandanmca/tmanikandanmca/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake Matrix" width="100%" style="max-width: 800px;">
-  </picture>
+<br><br>
 
-  <br><br>
+<!-- ==================== 5. LET'S CONNECT ==================== -->
+<h3>📫 Let's Connect &amp; Collaborate</h3>
+<p>
+<a href="https://www.linkedin.com/in/manikandan-thi/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile">
+</a>
+&nbsp;
+<a href="https://github.com/tmanikandanmca">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile">
+</a>
+&nbsp;
+<a href="mailto:tmanikandanmca@gmail.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Send Email">
+</a>
+&nbsp;
+<a href="https://github.com/tmanikandanmca?tab=discussions">
+<img src="https://img.shields.io/badge/Discussions-818CF8?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Discussions">
+</a>
+</p>
 
-  <!-- ==================== 5. LET'S CONNECT ==================== -->
-  <h3>📫 Let's Connect &amp; Collaborate</h3>
-  <p>
-    <a href="https://www.linkedin.com/in/manikandan-thi/">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile">
-    </a>
-    &nbsp;
-    <a href="https://github.com/tmanikandanmca">
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile">
-    </a>
-    &nbsp;
-    <a href="mailto:tmanikandanmca@gmail.com">
-      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Send Email">
-    </a>
-    &nbsp;
-    <a href="https://github.com/tmanikandanmca?tab=discussions">
-      <img src="https://img.shields.io/badge/Discussions-818CF8?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Discussions">
-    </a>
-  </p>
+<br>
 
-  <br>
+<!-- ==================== 6. FOOTER & PROFILE VIEWS ==================== -->
+<p>
+<img src="https://komarev.com/ghpvc/?username=tmanikandanmca&color=38bdf8&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile View Counter">
+</p>
 
-  <!-- ==================== 6. FOOTER & PROFILE VIEWS ==================== -->
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=tmanikandanmca&color=38bdf8&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile View Counter">
-  </p>
-
-  <p>
-    <i>"Keep learning, keep building, architecting resilience, and continuously growing."</i>
-  </p>
+<p>
+<i>"Keep learning, keep building, architecting resilience, and continuously growing."</i>
+</p>
 
 </div>
