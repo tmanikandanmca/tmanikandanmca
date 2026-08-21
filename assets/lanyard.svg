@@ -1,0 +1,231 @@
+<svg fill="none" viewBox="0 0 340 520" width="340" height="520" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Clip Path for User Avatar -->
+    <clipPath id="avatarClip">
+      <circle cx="170" cy="180" r="42" />
+    </clipPath>
+
+    <!-- Clip Path for Badge Card Shape (for holographic shine) -->
+    <clipPath id="cardClip">
+      <rect x="35" y="90" width="270" height="400" rx="18" ry="18" />
+    </clipPath>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="strapGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="25%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="75%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="metalGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="40%" stop-color="#f8fafc" />
+      <stop offset="60%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0a0e1a" />
+    </linearGradient>
+
+    <linearGradient id="holoShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0)" />
+      <stop offset="40%" stop-color="rgba(56, 189, 248, 0.15)" />
+      <stop offset="50%" stop-color="rgba(255, 255, 255, 0.35)" />
+      <stop offset="60%" stop-color="rgba(129, 140, 248, 0.18)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0)" />
+    </linearGradient>
+
+    <linearGradient id="accentLineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="badgeShadow" x="-10%" y="-5%" width="125%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#020617" flood-opacity="0.7" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#38bdf8" flood-opacity="0.12" />
+    </filter>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes swing {
+      0% { transform: rotate(-3.5deg); }
+      50% { transform: rotate(3.5deg); }
+      100% { transform: rotate(-3.5deg); }
+    }
+
+    @keyframes shinePass {
+      0%, 15% { transform: translateX(-350px) skewX(-25deg); }
+      45%, 100% { transform: translateX(450px) skewX(-25deg); }
+    }
+
+    @keyframes pulseRing {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.08); opacity: 0.3; }
+    }
+
+    .lanyard-assembly {
+      transform-origin: 170px 0px;
+      animation: swing 4.5s ease-in-out infinite;
+    }
+
+    .shine-bar {
+      animation: shinePass 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    .pulse-dot {
+      transform-origin: 265px 128px;
+      animation: pulseRing 2s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Animated Lanyard & Badge assembly -->
+  <g class="lanyard-assembly">
+    <!-- Top Strap Loop -->
+    <path d="M 148 0 L 160 62 L 180 62 L 192 0 Z" fill="url(#strapGrad)" opacity="0.95" />
+    <line x1="160" y1="0" x2="160" y2="62" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.7" />
+    <line x1="180" y1="0" x2="180" y2="62" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.7" />
+
+    <!-- Metal Swivel Clip / Carabiner -->
+    <!-- Clip Ring -->
+    <rect x="156" y="58" width="28" height="12" rx="4" fill="url(#metalGrad)" stroke="#334155" stroke-width="1" />
+    <!-- Clip Body -->
+    <path d="M 162 70 L 160 84 L 180 84 L 178 70 Z" fill="url(#metalGrad)" stroke="#1e293b" stroke-width="1" />
+    <!-- Badge Slot Hook -->
+    <path d="M 166 84 C 166 90, 174 90, 174 84 Z" fill="#94a3b8" />
+    <rect x="152" y="86" width="36" height="5" rx="2" fill="url(#metalGrad)" stroke="#475569" stroke-width="0.75" />
+
+    <!-- Outer Clear Badge Holder / Card Sleeve -->
+    <rect x="30" y="85" width="280" height="412" rx="22" ry="22" 
+          fill="none" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" 
+          filter="url(#badgeShadow)" />
+    
+    <!-- Lanyard Hole in Holder -->
+    <rect x="155" y="94" width="30" height="7" rx="3.5" fill="#070a13" stroke="rgba(148, 163, 184, 0.4)" stroke-width="1" />
+
+    <!-- Inner ID Badge Card -->
+    <g clip-path="url(#cardClip)">
+      <rect x="35" y="90" width="270" height="400" rx="18" ry="18" fill="url(#cardBg)" />
+
+      <!-- Decorative Cyber Background Lines -->
+      <path d="M 35 150 Q 170 180 305 130" stroke="rgba(56, 189, 248, 0.08)" stroke-width="40" fill="none" />
+      <path d="M 35 340 Q 170 300 305 350" stroke="rgba(129, 140, 248, 0.07)" stroke-width="50" fill="none" />
+
+      <!-- Top Header Bar -->
+      <rect x="35" y="110" width="270" height="32" fill="rgba(15, 23, 42, 0.85)" />
+      <text x="50" y="130" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">TECH ARCHITECT</text>
+      
+      <!-- Online Status Dot -->
+      <circle cx="265" cy="126" r="4.5" fill="#34d399" filter="url(#glow)" />
+      <circle cx="265" cy="126" r="8" fill="none" stroke="#34d399" stroke-width="1.5" class="pulse-dot" />
+
+      <!-- Accent Separator -->
+      <rect x="35" y="142" width="270" height="2" fill="url(#accentLineGrad)" />
+
+      <!-- Security Holographic Chip Icon (Top Left) -->
+      <rect x="52" y="156" width="26" height="22" rx="4" fill="rgba(203, 213, 225, 0.15)" stroke="#38bdf8" stroke-width="1" />
+      <path d="M 52 167 L 78 167 M 65 156 L 65 178 M 59 156 L 59 178 M 71 156 L 71 178" stroke="rgba(56, 189, 248, 0.5)" stroke-width="0.75" />
+
+      <!-- Verified Badge Icon (Top Right) -->
+      <circle cx="270" cy="167" r="11" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-width="1" />
+      <path d="M 264 167 L 268 171 L 276 163" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Avatar Section -->
+      <!-- Outer Glowing Ring -->
+      <circle cx="170" cy="205" r="47" fill="none" stroke="url(#accentLineGrad)" stroke-width="2.5" filter="url(#glow)" />
+      <circle cx="170" cy="205" r="43" fill="#0f172a" />
+      
+      <!-- User Avatar Image -->
+      <g clip-path="url(#avatarClip)" transform="translate(0, 25)">
+        <image href="https://avatars.githubusercontent.com/u/67586339?v=4" x="125" y="135" width="90" height="90" preserveAspectRatio="xMidYMid slice" />
+      </g>
+
+      <!-- Name & Title -->
+      <text x="170" y="275" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="-0.01em">Manikandan Thi</text>
+      
+      <text x="170" y="293" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" text-anchor="middle" letter-spacing="0.04em">FULL-STACK .NET DEVELOPER</text>
+      
+      <text x="170" y="309" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500" text-anchor="middle">@tmanikandanmca</text>
+
+      <!-- Skill Tag Badges inside Card -->
+      <g transform="translate(48, 322)">
+        <!-- Tag 1 -->
+        <rect x="0" y="0" width="74" height="20" rx="5" fill="rgba(129, 140, 248, 0.15)" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1" />
+        <text x="37" y="13.5" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">C# / .NET 10</text>
+        
+        <!-- Tag 2 -->
+        <rect x="80" y="0" width="76" height="20" rx="5" fill="rgba(244, 63, 94, 0.15)" stroke="rgba(244, 63, 94, 0.4)" stroke-width="1" />
+        <text x="118" y="13.5" fill="#fecdd3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">ANGULAR 18</text>
+        
+        <!-- Tag 3 -->
+        <rect x="162" y="0" width="82" height="20" rx="5" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1" />
+        <text x="203" y="13.5" fill="#bae6fd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle">MICROSERVICES</text>
+      </g>
+
+      <!-- Secondary Tags Row -->
+      <g transform="translate(68, 348)">
+        <rect x="0" y="0" width="96" height="18" rx="4" fill="rgba(52, 211, 153, 0.12)" stroke="rgba(52, 211, 153, 0.3)" stroke-width="1" />
+        <text x="48" y="12" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" text-anchor="middle">ASP.NET WEB API</text>
+
+        <rect x="102" y="0" width="102" height="18" rx="4" fill="rgba(148, 163, 184, 0.12)" stroke="rgba(148, 163, 184, 0.3)" stroke-width="1" />
+        <text x="153" y="12" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" text-anchor="middle">SQL / POSTGRESQL</text>
+      </g>
+
+      <!-- Divider -->
+      <line x1="52" y1="380" x2="288" y2="380" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1" stroke-dasharray="4,3" />
+
+      <!-- Bottom Barcode Section -->
+      <g transform="translate(52, 395)">
+        <!-- Barcode Lines -->
+        <rect x="0" y="0" width="3" height="34" fill="#cbd5e1" />
+        <rect x="5" y="0" width="2" height="34" fill="#cbd5e1" />
+        <rect x="9" y="0" width="4" height="34" fill="#cbd5e1" />
+        <rect x="16" y="0" width="1.5" height="34" fill="#cbd5e1" />
+        <rect x="20" y="0" width="3" height="34" fill="#cbd5e1" />
+        <rect x="25" y="0" width="5" height="34" fill="#cbd5e1" />
+        <rect x="33" y="0" width="2" height="34" fill="#cbd5e1" />
+        <rect x="38" y="0" width="3.5" height="34" fill="#cbd5e1" />
+        <rect x="44" y="0" width="1.5" height="34" fill="#cbd5e1" />
+        <rect x="48" y="0" width="4" height="34" fill="#cbd5e1" />
+        <rect x="54" y="0" width="2" height="34" fill="#cbd5e1" />
+        <rect x="58" y="0" width="5" height="34" fill="#cbd5e1" />
+        <rect x="66" y="0" width="1.5" height="34" fill="#cbd5e1" />
+        <rect x="70" y="0" width="3" height="34" fill="#cbd5e1" />
+        <rect x="75" y="0" width="4" height="34" fill="#cbd5e1" />
+        <rect x="82" y="0" width="2" height="34" fill="#cbd5e1" />
+        <rect x="87" y="0" width="3.5" height="34" fill="#cbd5e1" />
+        <rect x="93" y="0" width="1.5" height="34" fill="#cbd5e1" />
+        <rect x="97" y="0" width="4.5" height="34" fill="#cbd5e1" />
+        <rect x="104" y="0" width="2" height="34" fill="#cbd5e1" />
+        <rect x="108" y="0" width="3.5" height="34" fill="#cbd5e1" />
+
+        <!-- Serial & Access Level info on the right -->
+        <text x="124" y="12" fill="#94a3b8" font-family="'Courier New', monospace" font-size="9" font-weight="700">PASS: #67586339</text>
+        <text x="124" y="24" fill="#38bdf8" font-family="'Courier New', monospace" font-size="8.5" font-weight="600">AUTH: LEVEL-9 // DEV</text>
+        <text x="124" y="34" fill="#64748b" font-family="'Courier New', monospace" font-size="8">EXP: PERMANENT</text>
+      </g>
+
+      <!-- Holographic Moving Glare / Shine Effect -->
+      <g class="shine-bar">
+        <rect x="0" y="50" width="140" height="460" fill="url(#holoShine)" />
+      </g>
+    </g>
+
+    <!-- Corner Clips / Screws on card holder -->
+    <circle cx="44" cy="100" r="2.5" fill="#475569" stroke="#94a3b8" stroke-width="0.5" />
+    <circle cx="296" cy="100" r="2.5" fill="#475569" stroke="#94a3b8" stroke-width="0.5" />
+    <circle cx="44" cy="482" r="2.5" fill="#475569" stroke="#94a3b8" stroke-width="0.5" />
+    <circle cx="296" cy="482" r="2.5" fill="#475569" stroke="#94a3b8" stroke-width="0.5" />
+  </g>
+</svg>

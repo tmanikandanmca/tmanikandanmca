@@ -1,0 +1,251 @@
+<svg fill="none" viewBox="0 0 900 240" width="100%" height="240" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes gradientMove {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+
+        @keyframes pulseGlow {
+          0%, 100% { opacity: 0.35; transform: scale(1); }
+          50% { opacity: 0.75; transform: scale(1.08); }
+        }
+
+        .banner-card {
+          width: 896px;
+          height: 236px;
+          background: linear-gradient(135deg, #070a13 0%, #0d1527 50%, #0b1120 100%);
+          border-radius: 18px;
+          border: 1px solid rgba(56, 189, 248, 0.25);
+          box-shadow: 0 20px 40px -15px rgba(2, 6, 23, 0.8), 0 0 35px -5px rgba(56, 189, 248, 0.15);
+          position: relative;
+          overflow: hidden;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0 30px;
+          box-sizing: border-box;
+        }
+
+        /* Ambient Glow Spheres */
+        .glow-1 {
+          position: absolute;
+          width: 320px;
+          height: 320px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, rgba(56, 189, 248, 0) 70%);
+          top: -120px;
+          left: -80px;
+          animation: pulseGlow 8s ease-in-out infinite;
+          pointer-events: none;
+        }
+
+        .glow-2 {
+          position: absolute;
+          width: 380px;
+          height: 380px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(129, 140, 248, 0.18) 0%, rgba(129, 140, 248, 0) 70%);
+          bottom: -150px;
+          right: -100px;
+          animation: pulseGlow 10s ease-in-out infinite 2s;
+          pointer-events: none;
+        }
+
+        .glow-3 {
+          position: absolute;
+          width: 220px;
+          height: 220px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(52, 211, 153, 0.12) 0%, rgba(52, 211, 153, 0) 70%);
+          top: 30px;
+          right: 25%;
+          animation: pulseGlow 7s ease-in-out infinite 1s;
+          pointer-events: none;
+        }
+
+        /* Tech Grid Background */
+        .grid-overlay {
+          position: absolute;
+          inset: 0;
+          background-image: 
+            linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+          background-size: 28px 28px;
+          mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+          pointer-events: none;
+        }
+
+        /* Status Badge */
+        .status-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(15, 23, 42, 0.75);
+          border: 1px solid rgba(56, 189, 248, 0.3);
+          border-radius: 9999px;
+          padding: 4px 14px;
+          font-size: 11px;
+          font-weight: 600;
+          color: #38bdf8;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          backdrop-filter: blur(8px);
+        }
+
+        .status-dot {
+          width: 7px;
+          height: 7px;
+          background-color: #34d399;
+          border-radius: 50%;
+          box-shadow: 0 0 10px #34d399, 0 0 4px #34d399;
+          animation: pulseGlow 2s infinite;
+        }
+
+        /* Title */
+        .title-wrapper {
+          position: relative;
+          display: inline-block;
+          margin: 0;
+        }
+
+        .name-title {
+          font-size: 34px;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+          background: linear-gradient(120deg, #ffffff 15%, #38bdf8 55%, #818cf8 90%);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin: 0;
+          line-height: 1.2;
+          animation: gradientMove 6s linear infinite;
+        }
+
+        /* Subtitle */
+        .role-tagline {
+          font-size: 14.5px;
+          color: #94a3b8;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          font-weight: 500;
+          letter-spacing: 0.02em;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .role-highlight {
+          color: #e2e8f0;
+          font-weight: 600;
+        }
+
+        .divider-bullet {
+          color: #38bdf8;
+          font-size: 10px;
+        }
+
+        /* Tech Pills */
+        .skills-row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 8px;
+        }
+
+        .skill-tag {
+          background: rgba(30, 41, 59, 0.6);
+          border: 1px solid rgba(148, 163, 184, 0.18);
+          border-radius: 6px;
+          padding: 3px 10px;
+          font-size: 11.5px;
+          font-weight: 500;
+          color: #cbd5e1;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        .skill-tag.accent-dotnet {
+          border-color: rgba(129, 140, 248, 0.4);
+          color: #c7d2fe;
+          background: rgba(99, 102, 241, 0.12);
+        }
+
+        .skill-tag.accent-azure {
+          border-color: rgba(56, 189, 248, 0.4);
+          color: #bae6fd;
+          background: rgba(56, 189, 248, 0.12);
+        }
+
+        .skill-tag.accent-angular {
+          border-color: rgba(244, 63, 94, 0.4);
+          color: #fecdd3;
+          background: rgba(244, 63, 94, 0.12);
+        }
+
+        .skill-tag.accent-db {
+          border-color: rgba(52, 211, 153, 0.4);
+          color: #a7f3d0;
+          background: rgba(52, 211, 153, 0.12);
+        }
+
+        /* Accent Corner Borders */
+        .corner-accent {
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          border-color: #38bdf8;
+          opacity: 0.6;
+        }
+        .corner-tl { top: 12px; left: 12px; border-top: 2px solid; border-left: 2px solid; }
+        .corner-tr { top: 12px; right: 12px; border-top: 2px solid; border-right: 2px solid; }
+        .corner-bl { bottom: 12px; left: 12px; border-bottom: 2px solid; border-left: 2px solid; }
+        .corner-br { bottom: 12px; right: 12px; border-bottom: 2px solid; border-right: 2px solid; }
+      </style>
+
+      <div class="banner-card">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+        <div class="glow-3"></div>
+        <div class="grid-overlay"></div>
+
+        <div class="corner-accent corner-tl"></div>
+        <div class="corner-accent corner-tr"></div>
+        <div class="corner-accent corner-bl"></div>
+        <div class="corner-accent corner-br"></div>
+
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Open for Scalable Architecture &amp; Development</span>
+        </div>
+
+        <div class="title-wrapper">
+          <h1 class="name-title">Manikandan Thiyagarajan</h1>
+        </div>
+
+        <div class="role-tagline">
+          <span class="role-highlight">Senior Full-Stack .NET Engineer</span>
+          <span class="divider-bullet">&#9670;</span>
+          <span>Web &amp; Microservices Architect</span>
+          <span class="divider-bullet">&#9670;</span>
+          <span style="color: #38bdf8;">@tmanikandanmca</span>
+        </div>
+
+        <div class="skills-row">
+          <div class="skill-tag accent-dotnet">&#x26A1; C# &amp; .NET 10</div>
+          <div class="skill-tag accent-dotnet">ASP.NET Core Web API</div>
+          <div class="skill-tag accent-angular">Angular 18 &amp; TypeScript</div>
+          <div class="skill-tag accent-azure">Clean Architecture &amp; Microservices</div>
+          <div class="skill-tag accent-db">SQL Server &amp; PostgreSQL</div>
+          <div class="skill-tag">Docker &amp; CI/CD</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
